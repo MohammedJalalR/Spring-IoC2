@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="rcb" class="com.jpsider.pkg.User">
+		<property name="Username" value="Mani"></property>
+		<property name="Userid" value="123"></property>
+		<property name="HomeAddress" ref="home"></property>
+		<property name="WorkAddress" ref="work"></property>
+	</bean>
+	<bean id="home" class="com.jpsider.pkg.Address">
+		<property name="state" value="Karnataka"></property>
+		<property name="city" value="bengaluru"></property>
+	</bean>
+	<bean id="work" class="com.jpsider.pkg.Address">
+		<property name="state" value="Karnataka"></property>
+		<property name="city" value="shivmogga"></property>
+	</bean>
+
+</beans>
